@@ -1,6 +1,5 @@
 terraform {
   required_providers {
-  features {}
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "=3.0.0"
@@ -12,6 +11,7 @@ terraform {
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
     }
+    features {}
 }
 
 variable "imagebuild" {
