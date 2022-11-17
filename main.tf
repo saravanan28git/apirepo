@@ -11,7 +11,10 @@ terraform {
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
     }
-    features {}
+}
+
+provider "azurerm" {
+  features {}
 }
 
 variable "imagebuild" {
