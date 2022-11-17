@@ -30,8 +30,8 @@ resource "azurerm_container_group" "tfcg_test" {
   location                  = azurerm_resource_group.tf_test.location
   resource_group_name       = azurerm_resource_group.tf_test.name
 
-  ip_address_type     = "public"
-  dns_name_label      = "binarythistlewa"
+  ip_address_type     = "Public"
+  dns_name_label      = "weatherapinewß"
   os_type             = "Linux"
 
   container {
