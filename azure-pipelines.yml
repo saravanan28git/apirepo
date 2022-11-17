@@ -22,7 +22,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'SA's Docker Hub'
+        containerRegistry: 'Docker ServiceConnection'
         repository: 'sa28docker/weatherapi'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
