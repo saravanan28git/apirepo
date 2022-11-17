@@ -1,9 +1,10 @@
-provider "azurerm" {
-    version = "2.5.0"
-    features {}
-}
-
 terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.0.0"
+    }
+  }
     backend "azurerm" {
         resource_group_name  = "together-money-saravanan"
         storage_account_name = "tfstorageapi"
