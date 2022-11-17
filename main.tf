@@ -1,5 +1,6 @@
 terraform {
   required_providers {
+  features {}
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "=3.0.0"
@@ -17,7 +18,6 @@ variable "imagebuild" {
   type        = string
   description = "Latest Image Build"
 }
-
 
 
 resource "azurerm_resource_group" "tf_test" {
